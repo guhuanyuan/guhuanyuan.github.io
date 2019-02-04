@@ -1,7 +1,15 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
+    loop: 'all',
     autoplay: true,
+    volume: 0.7,
+    theme: '#808080'
+    listFolded: true,
+    listMaxHeight: 60,
+    preload: 'auto', //预加载，可选值: 'none', 'metadata', 'auto'
+    lrcType: 3, //歌词传递方式
+    mutex: true, //互斥，阻止多个播放器同时播放
     audio: [
       {
         name: "借我",
